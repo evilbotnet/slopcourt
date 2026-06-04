@@ -1,0 +1,10 @@
+{
+  "id": "case-3280-useful-support-agent",
+  "title": "Support agent with receipts",
+  "source": "Public",
+  "text": "The support agent completed 312 refund triage tasks last week. It resolved 68% without escalation, flagged 19 policy conflicts, and posts every tool call plus failure reason into the audit log.",
+  "mode": "agent",
+  "chaos": 5,
+  "serious": true,
+  "friendly": true
+}

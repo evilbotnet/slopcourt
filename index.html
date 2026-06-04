@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SlopCourt - Put AI Output on Trial</title>
+    <meta
+      name="description"
+      content="A meme-native quality court for AI pitches, posts, and agent demos. Generate a verdict, fixes, and a share card."
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="slopcore.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#court" aria-label="SlopCourt home">
+        <span class="brand-mark" aria-hidden="true">SC</span>
+        <span>
+          <strong>SlopCourt</strong>
+          <small>public vibe tribunal</small>
+        </span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#court">Court</a>
+        <a href="#docket">Docket</a>
+        <a href="#share">Share</a>
+        <a href="#scope">Scope</a>
+      </nav>
+      <span class="status-chip">Static MVP</span>
+    </header>
+
+    <main>
+      <section id="court" class="court-grid" aria-label="SlopCourt analyzer">
+        <div class="court-intake panel">
+          <div class="section-kicker">Case intake</div>
+          <h1>Put AI output on trial.</h1>
+          <p class="lede">
+            Paste a launch post, agent demo, startup pitch, or generated content. SlopCourt returns a verdict,
+            receipts, fixes, and a card built to spread.
+          </p>
+
+          <label class="field-label" for="case-input">Case file</label>
+          <textarea
+            id="case-input"
+            rows="12"
+            spellcheck="true"
+            placeholder="Paste the thing that might be slop..."
+          ></textarea>
+
+          <fieldset class="mode-control" aria-label="Court mode">
+            <legend>Court mode</legend>
+            <label>
+              <input type="radio" name="mode" value="pitch" checked>
+              <span>Founder pitch</span>
+            </label>
+            <label>
+              <input type="radio" name="mode" value="agent">
+              <span>Agent demo</span>
+            </label>
+            <label>
+              <input type="radio" name="mode" value="post">
+              <span>LinkedIn post</span>
+            </label>
+            <label>
+              <input type="radio" name="mode" value="meme">
+              <span>Meme drop</span>
+            </label>
+          </fieldset>
+
+          <div class="slider-row">
+            <label for="chaos-range">Court temperament</label>
+            <div class="range-wrap">
+              <span>Mercy</span>
+              <input id="chaos-range" type="range" min="1" max="10" value="6">
+              <span>Chaos</span>
+            </div>
+          </div>
+
+          <div class="toggle-row">
+            <label>
+              <input id="serious-toggle" type="checkbox" checked>
+              <span>Include operator notes</span>
+            </label>
+            <label>
+              <input id="friendly-toggle" type="checkbox">
+              <span>Founder-friendly sentence</span>
+            </label>
+          </div>
+
+          <div class="button-row">
+            <button id="analyze-btn" type="button" class="primary-action">Call court</button>
+            <button id="file-btn" type="button">File to docket</button>
+            <button id="export-case-btn" type="button">Download case JSON</button>
+            <button id="sample-btn" type="button">Load sample</button>
+            <button id="clear-btn" type="button">Clear</button>
+          </div>
+        </div>
+
+        <section class="verdict-panel panel" aria-live="polite" aria-labelledby="verdict-title">
+          <div class="verdict-head">
+            <div>
+              <div class="section-kicker">Verdict</div>
+              <h2 id="verdict-title">Awaiting evidence</h2>
+            </div>
+            <span id="case-id" class="case-id">CASE 0000</span>
+          </div>
+
+          <div class="stamp-wrap" aria-hidden="true">
+            <span id="verdict-stamp" class="verdict-stamp">UNFILED</span>
+          </div>
+
+          <canvas id="signal-canvas" width="720" height="320" aria-label="Signal chart"></canvas>
+
+          <div class="score-grid" aria-label="Scores">
+            <div>
+              <span id="slop-score">0</span>
+              <small>Slop index</small>
+            </div>
+            <div>
+              <span id="meme-score">0</span>
+              <small>Meme velocity</small>
+            </div>
+            <div>
+              <span id="proof-score">0</span>
+              <small>Proof density</small>
+            </div>
+            <div>
+              <span id="change-score">0</span>
+              <small>Change potential</small>
+            </div>
+          </div>
+
+          <div class="result-columns">
+            <div>
+              <h3>Charges</h3>
+              <ul id="charges-list"></ul>
+            </div>
+            <div>
+              <h3>Sentence</h3>
+              <ul id="fixes-list"></ul>
+            </div>
+          </div>
+        </section>
+
+        <aside class="intel-panel panel" aria-labelledby="intel-title">
+          <div class="section-kicker">Operator board</div>
+          <h2 id="intel-title">Grassroots wedge, real business.</h2>
+          <p>
+            The joke is public accountability for AI slop. The product is a quality standard for teams shipping
+            AI-generated content, agents, and demos.
+          </p>
+          <ol class="roadmap-list">
+            <li><strong>Week 1:</strong> public verdict cards, static docket, creator replies.</li>
+            <li><strong>Week 2:</strong> GitHub issue intake, JSON review flow, leaderboard.</li>
+            <li><strong>Week 3:</strong> client-side browser extension and badge exports.</li>
+          </ol>
+          <div class="money-box">
+            <h3>Monetization</h3>
+            <p>
+              Free public trials drive distribution. Any paid layer stays optional: branded exports, private review
+              packs, team rubrics, and bring-your-own-model scoring.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <section id="docket" class="docket-section">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">Public docket</div>
+            <h2>Verdicts need somewhere to travel.</h2>
+          </div>
+          <p>
+            Public cases can live as JSON files in the repo, so the docket works on GitHub Pages, S3, or any static host.
+          </p>
+          <div class="button-row compact">
+            <button id="permalink-btn" type="button">Copy permalink</button>
+            <button id="random-case-btn" type="button">Random case</button>
+          </div>
+        </div>
+        <div class="docket-controls">
+          <div class="docket-toolbar" aria-label="Docket filters">
+            <span>Filter</span>
+            <button type="button" class="docket-filter is-active" data-filter="all">All</button>
+            <button type="button" class="docket-filter" data-filter="pitch">Pitches</button>
+            <button type="button" class="docket-filter" data-filter="agent">Agents</button>
+            <button type="button" class="docket-filter" data-filter="post">Posts</button>
+            <button type="button" class="docket-filter" data-filter="meme">Memes</button>
+          </div>
+          <div class="docket-toolbar" aria-label="Leaderboard sort">
+            <span>Rank</span>
+            <button type="button" class="docket-sort is-active" data-sort="featured">Featured</button>
+            <button type="button" class="docket-sort" data-sort="slop">Slop</button>
+            <button type="button" class="docket-sort" data-sort="meme">Meme</button>
+            <button type="button" class="docket-sort" data-sort="proof">Proof</button>
+            <button type="button" class="docket-sort" data-sort="change">Change</button>
+          </div>
+        </div>
+        <div id="docket-list" class="docket-list" aria-live="polite"></div>
+      </section>
+
+      <section id="share" class="share-section">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">Share studio</div>
+            <h2>Export the verdict as social proof.</h2>
+          </div>
+          <div class="button-row compact">
+            <button id="download-btn" type="button">Download PNG</button>
+            <button id="copy-btn" type="button">Copy verdict</button>
+          </div>
+        </div>
+        <div class="share-frame">
+          <canvas id="share-canvas" width="1200" height="630" aria-label="Share card preview"></canvas>
+        </div>
+      </section>
+
+      <section id="scope" class="scope-section">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">Scope</div>
+            <h2>Concept, build, and deployment plan.</h2>
+          </div>
+          <p>
+            The MVP is designed to be funny enough to share and concrete enough to sell into AI teams.
+          </p>
+        </div>
+        <div class="scope-grid">
+          <article>
+            <h3>Concept</h3>
+            <p>
+              SlopCourt turns the internet's frustration with generic AI output into a participatory benchmark.
+              Users submit content, receive a verdict, and share the card. The dataset becomes the moat.
+            </p>
+          </article>
+          <article>
+            <h3>Build</h3>
+            <p>
+              This version is static HTML, CSS, and JavaScript. The scoring engine is deterministic, explainable,
+              and ready to be swapped with an LLM-backed evaluator.
+            </p>
+          </article>
+          <article>
+            <h3>Deployment</h3>
+            <p>
+              Ship as a static site first. Public cases are repo JSON, the docket is a generated static file,
+              and case links work without a server.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="deploy" class="deploy-section">
+        <div class="deploy-copy">
+          <div class="section-kicker">Deployment</div>
+          <h2>No build step. No waiting.</h2>
+          <p>
+            Push the repo to GitHub Pages, upload it to an S3 static bucket, or serve the files from any static
+            host. Rebuild the docket, case pages, and share cards only when public case files change.
+          </p>
+        </div>
+        <pre><code>npm run build
+python3 -m http.server 4173
+# open http://127.0.0.1:4173</code></pre>
+      </section>
+    </main>
+  </body>
+</html>

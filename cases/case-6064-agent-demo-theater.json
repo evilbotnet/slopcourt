@@ -1,0 +1,10 @@
+{
+  "id": "case-6064-agent-demo-theater",
+  "title": "Agent demo theater",
+  "source": "Public",
+  "text": "Hot take: if your AI agent cannot show logs, permissions, and failure states, it is not an agent demo. It is theater with a progress bar.",
+  "mode": "post",
+  "chaos": 8,
+  "serious": true,
+  "friendly": false
+}

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Autonomous password spreadsheet SlopCourt verdict">
+  <style>
+    .bg { fill: #f7f3ea; }
+    .paper { fill: #fffdf7; stroke: #141414; stroke-width: 8; }
+    .grid { stroke: #141414; stroke-width: 2; opacity: 0.28; }
+    .ink { fill: #141414; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    .muted { fill: #5f5b52; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    .brand { fill: #df2f2f; stroke: #141414; stroke-width: 6; }
+    .brand-text { fill: #fffdf7; font: 950 42px Inter, ui-sans-serif, system-ui, sans-serif; }
+    .title { fill: #141414; font: 950 64px Inter, ui-sans-serif, system-ui, sans-serif; }
+    .meta { fill: #5f5b52; font: 850 24px Inter, ui-sans-serif, system-ui, sans-serif; }
+    .verdict { fill: #1769ff; font: 950 54px Inter, ui-sans-serif, system-ui, sans-serif; }
+    .body { fill: #141414; font: 760 23px Inter, ui-sans-serif, system-ui, sans-serif; }
+    .charge { fill: #141414; font: 850 22px Inter, ui-sans-serif, system-ui, sans-serif; }
+    .score-label { fill: #5f5b52; font: 900 16px Inter, ui-sans-serif, system-ui, sans-serif; }
+    .score-value { fill: #141414; font: 950 44px Inter, ui-sans-serif, system-ui, sans-serif; }
+    .stamp { fill: none; stroke: #1769ff; stroke-width: 7; }
+    .stamp-text { fill: #1769ff; font: 950 25px Inter, ui-sans-serif, system-ui, sans-serif; }
+  </style>
+  <rect class="bg" width="1200" height="630"/>
+  <g>
+    <path class="grid" d="M0 48H1200M0 96H1200M0 144H1200M0 192H1200M0 240H1200M0 288H1200M0 336H1200M0 384H1200M0 432H1200M0 480H1200M0 528H1200M0 576H1200"/>
+    <path class="grid" d="M48 0V630M96 0V630M144 0V630M192 0V630M240 0V630M288 0V630M336 0V630M384 0V630M432 0V630M480 0V630M528 0V630M576 0V630M624 0V630M672 0V630M720 0V630M768 0V630M816 0V630M864 0V630M912 0V630M960 0V630M1008 0V630M1056 0V630M1104 0V630M1152 0V630"/>
+  </g>
+  <rect x="58" y="58" width="1084" height="514" class="paper"/>
+  <rect x="88" y="88" width="88" height="88" class="brand"/>
+  <text x="132" y="146" text-anchor="middle" class="brand-text">SC</text>
+  <text x="202" y="124" class="ink" style="font: 950 48px Inter, ui-sans-serif, system-ui, sans-serif;">SlopCourt Verdict</text>
+  <text x="202" y="162" class="meta">CASE 6871 | Meme drop | Public</text>
+
+  <g transform="translate(814 108) rotate(-5)">
+    <rect width="226" height="72" class="stamp"/>
+    <text x="113" y="45" text-anchor="middle" class="stamp-text">REWRITE</text>
+  </g>
+
+<text x="88" y="250" class="title">Autonomous password</text>
+<text x="88" y="320" class="title">spreadsheet</text>
+  <text x="88" y="380" class="verdict">REMANDED TO HUMAN REVIEW</text>
+<text x="88" y="420" class="body">founder: our agent is autonomous. agent: please paste your password into the shared</text>
+<text x="88" y="451" class="body">spreadsheet.</text>
+
+  <g transform="translate(88 474)">
+    <g transform="translate(0 0)">
+      <rect width="168" height="80" fill="#fffdf7" stroke="#141414" stroke-width="4"/>
+      <rect width="168" height="12" fill="#df2f2f"/>
+      <text x="16" y="53" class="score-value">69</text>
+      <text x="82" y="53" class="score-label">SLOP</text>
+    </g>
+    <g transform="translate(204 0)">
+      <rect width="168" height="80" fill="#fffdf7" stroke="#141414" stroke-width="4"/>
+      <rect width="168" height="12" fill="#1769ff"/>
+      <text x="16" y="53" class="score-value">99</text>
+      <text x="82" y="53" class="score-label">MEME</text>
+    </g>
+    <g transform="translate(408 0)">
+      <rect width="168" height="80" fill="#fffdf7" stroke="#141414" stroke-width="4"/>
+      <rect width="168" height="12" fill="#1d8b5f"/>
+      <text x="16" y="53" class="score-value">2</text>
+      <text x="82" y="53" class="score-label">PROOF</text>
+    </g>
+    <g transform="translate(612 0)">
+      <rect width="168" height="80" fill="#fffdf7" stroke="#141414" stroke-width="4"/>
+      <rect width="168" height="12" fill="#f2c94c"/>
+      <text x="16" y="53" class="score-value">10</text>
+      <text x="82" y="53" class="score-label">CHANGE</text>
+    </g>
+  </g>
+
+<text x="88" y="596" class="charge">Buzzword possession: autonomous, agent.</text>
+</svg>

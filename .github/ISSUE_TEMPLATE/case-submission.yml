@@ -1,0 +1,94 @@
+name: Submit a SlopCourt case
+description: Nominate AI output, an agent demo claim, launch copy, or a meme for the public docket.
+title: "[Case]: "
+labels:
+  - case-submission
+  - needs-review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting a case. SlopCourt is static-first: accepted cases are promoted into `cases/*.json`, then the docket, case page, and share card are regenerated.
+
+  - type: textarea
+    id: case_text
+    attributes:
+      label: Case text
+      description: Paste the exact content to judge. Do not include private data or anything you do not have permission to submit publicly.
+      placeholder: "Paste the launch claim, agent demo copy, post, or meme text..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Court mode
+      options:
+        - Founder pitch
+        - Agent demo
+        - LinkedIn post
+        - Meme drop
+    validations:
+      required: true
+
+  - type: dropdown
+    id: temperament
+    attributes:
+      label: Court temperament
+      description: Pick the closest value. Maintainers may adjust during promotion.
+      options:
+        - "1 - Mercy"
+        - "2"
+        - "3"
+        - "4"
+        - "5"
+        - "6"
+        - "7"
+        - "8"
+        - "9"
+        - "10 - Chaos"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: options
+    attributes:
+      label: Verdict options
+      options:
+        - label: Include operator notes
+        - label: Include founder-friendly sentence
+
+  - type: input
+    id: source
+    attributes:
+      label: Source or context
+      description: Optional public source, submitter handle, or context note.
+      placeholder: "Example: public launch post, demo transcript, submitted by @handle"
+
+  - type: textarea
+    id: exported_json
+    attributes:
+      label: Exported case JSON
+      description: Optional. In SlopCourt, click "Download case JSON" and paste the contents here.
+      render: json
+      placeholder: |
+        {
+          "id": "case-0000-example",
+          "title": "Example case",
+          "source": "Community",
+          "text": "...",
+          "mode": "agent",
+          "chaos": 6,
+          "serious": true,
+          "friendly": false
+        }
+
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: Public submission confirmation
+      options:
+        - label: I understand this submission may become a public JSON case, static case page, and share card.
+          required: true
+        - label: This submission does not include private credentials, personal data, confidential business information, or non-public customer data.
+          required: true

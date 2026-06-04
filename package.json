@@ -1,0 +1,11 @@
+{
+  "name": "slopcourt",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build-docket.mjs",
+    "build:docket": "node tools/build-docket.mjs",
+    "check": "node --check slopcore.js && node --check app.js && node --check tools/build-docket.mjs && node tools/build-docket.mjs"
+  }
+}

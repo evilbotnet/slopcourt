@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "generatedAt": "2026-06-04T02:06:10.106Z",
+  "cases": [
+    {
+      "id": "case-3280-useful-support-agent",
+      "title": "Support agent with receipts",
+      "source": "Public",
+      "url": "case/case-3280-useful-support-agent/",
+      "cardUrl": "case/case-3280-useful-support-agent/card.svg",
+      "result": {
+        "id": "CASE 5296",
+        "verdict": {
+          "title": "Probation: decent vibes",
+          "stamp": "Passable",
+          "color": "#1d8b5f"
+        },
+        "mode": "agent",
+        "scores": {
+          "slop": 39,
+          "meme": 71,
+          "proof": 41,
+          "change": 65,
+          "swagger": 59
+        },
+        "charges": [
+          "Buzzword possession: agent.",
+          "Agent demo gap: no tool logs, task completion rate, or failure mode disclosed."
+        ],
+        "fixes": [
+          "Replace \"agent\" with a concrete action, user, and before/after result.",
+          "Attach one receipt: screenshot, benchmark, customer quote, log, or demo recording.",
+          "Show the agent's tools, permissions, success criteria, and what happens when it fails.",
+          "Operator note: split claim, proof, and ask into three short blocks before posting.",
+          "Founder-friendly sentence: the idea may be real, but the public claim needs receipts."
+        ],
+        "hits": [
+          "agent"
+        ],
+        "proofHits": [
+          "audit"
+        ],
+        "wordCount": 31
+      },
+      "text": "The support agent completed 312 refund triage tasks last week. It resolved 68% without escalation, flagged 19 policy conflicts, and posts every tool call plus failure reason into the audit log.",
+      "mode": "agent",
+      "chaos": 5,
+      "serious": true,
+      "friendly": true
+    },
+    {
+      "id": "case-4107-ai-native-revenue-copilot",
+      "title": "AI-native revenue copilot",
+      "source": "Public",
+      "url": "case/case-4107-ai-native-revenue-copilot/",
+      "cardUrl": "case/case-4107-ai-native-revenue-copilot/card.svg",
+      "result": {
+        "id": "CASE 2326",
+        "verdict": {
+          "title": "Guilty of premium slop",
+          "stamp": "Guilty",
+          "color": "#df2f2f"
+        },
+        "mode": "pitch",
+        "scores": {
+          "slop": 85,
+          "meme": 96,
+          "proof": 16,
+          "change": 24,
+          "swagger": 99
+        },
+        "charges": [
+          "Buzzword possession: agentic, ai-native, unlock, seamless, 10x, copilot.",
+          "Thin receipts: some signal, but not enough to survive a skeptical group chat."
+        ],
+        "fixes": [
+          "Replace \"agentic\" with a concrete action, user, and before/after result.",
+          "Add two numbers: time saved, cost reduced, users served, revenue, or eval score.",
+          "Attach one receipt: screenshot, benchmark, customer quote, log, or demo recording.",
+          "Operator note: split claim, proof, and ask into three short blocks before posting."
+        ],
+        "hits": [
+          "agentic",
+          "ai-native",
+          "unlock",
+          "seamless",
+          "10x",
+          "copilot"
+        ],
+        "proofHits": [
+          "revenue",
+          "pilot"
+        ],
+        "wordCount": 26
+      },
+      "text": "Our AI-native copilot unlocks agentic productivity for modern revenue teams. It transforms every workflow with seamless intelligence and gives leaders a 10x operating system for growth.",
+      "mode": "pitch",
+      "chaos": 7,
+      "serious": true,
+      "friendly": false
+    },
+    {
+      "id": "case-6064-agent-demo-theater",
+      "title": "Agent demo theater",
+      "source": "Public",
+      "url": "case/case-6064-agent-demo-theater/",
+      "cardUrl": "case/case-6064-agent-demo-theater/card.svg",
+      "result": {
+        "id": "CASE 4358",
+        "verdict": {
+          "title": "Remanded to human review",
+          "stamp": "Rewrite",
+          "color": "#1769ff"
+        },
+        "mode": "post",
+        "scores": {
+          "slop": 76,
+          "meme": 93,
+          "proof": 3,
+          "change": 12,
+          "swagger": 87
+        },
+        "charges": [
+          "Buzzword possession: agent.",
+          "No receipts: zero numbers, benchmarks, users, revenue, or shipped proof."
+        ],
+        "fixes": [
+          "Replace \"agent\" with a concrete action, user, and before/after result.",
+          "Add two numbers: time saved, cost reduced, users served, revenue, or eval score.",
+          "Attach one receipt: screenshot, benchmark, customer quote, log, or demo recording.",
+          "Operator note: split claim, proof, and ask into three short blocks before posting."
+        ],
+        "hits": [
+          "agent"
+        ],
+        "proofHits": [],
+        "wordCount": 26
+      },
+      "text": "Hot take: if your AI agent cannot show logs, permissions, and failure states, it is not an agent demo. It is theater with a progress bar.",
+      "mode": "post",
+      "chaos": 8,
+      "serious": true,
+      "friendly": false
+    },
+    {
+      "id": "case-9042-password-spreadsheet",
+      "title": "Autonomous password spreadsheet",
+      "source": "Public",
+      "url": "case/case-9042-password-spreadsheet/",
+      "cardUrl": "case/case-9042-password-spreadsheet/card.svg",
+      "result": {
+        "id": "CASE 6871",
+        "verdict": {
+          "title": "Remanded to human review",
+          "stamp": "Rewrite",
+          "color": "#1769ff"
+        },
+        "mode": "meme",
+        "scores": {
+          "slop": 69,
+          "meme": 99,
+          "proof": 2,
+          "change": 10,
+          "swagger": 82
+        },
+        "charges": [
+          "Buzzword possession: autonomous, agent.",
+          "No receipts: zero numbers, benchmarks, users, revenue, or shipped proof.",
+          "Under-filed case: too short to judge beyond raw vibes."
+        ],
+        "fixes": [
+          "Replace \"autonomous\" with a concrete action, user, and before/after result.",
+          "Add two numbers: time saved, cost reduced, users served, revenue, or eval score.",
+          "Attach one receipt: screenshot, benchmark, customer quote, log, or demo recording.",
+          "Make the punchline portable: one phrase people can quote without context."
+        ],
+        "hits": [
+          "autonomous",
+          "agent"
+        ],
+        "proofHits": [],
+        "wordCount": 14
+      },
+      "text": "founder: our agent is autonomous. agent: please paste your password into the shared spreadsheet.",
+      "mode": "meme",
+      "chaos": 9,
+      "serious": false,
+      "friendly": false
+    }
+  ]
+}
